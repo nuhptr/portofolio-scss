@@ -9,4 +9,13 @@ $dark-color: #333;
 $website-width: 1280px;
 
 // image
-$bg-image: url("../img/showcase.jpg")
+$bg-image: url("../img/showcase.jpg");
+
+// Function set-text-color
+@function set-text-color($color) {
+    @if (lightness($color) > 50) {
+        @return $dark-color;
+    } @else {
+        @return $white-color;
+    }
+}

@@ -200,5 +200,71 @@ img {
   gap: 1.5rem;
   text-align: center;
 }
+#home-c .process .icon {
+  position: relative;
+}
+#home-c .process--step {
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  transform: translateX(50%);
+  font-size: 24px;
+  border-radius: 50%;
+  line-height: 15px;
+  padding: 1rem;
+  transition: all 1s;
+}
+#home-c .process--step::before {
+  content: "";
+  background-color: #ffbc00;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  top: 10%;
+  left: 10%;
+}
+#home-c .process--icon {
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  transition: all 1s;
+}
+#home-c .process--icon:hover {
+  background-color: #ffbc00;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+}
+
+#main-footer {
+  background-color: #333;
+  color: #fff;
+  height: 5rem;
+}
+#main-footer .footer--content {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+#main-footer .footer--content .footer--social {
+  display: flex;
+  gap: 1.5rem;
+}
+#main-footer .footer--content .footer--social a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+#main-footer .footer--content .footer--social a:hover {
+  color: #ffbc00;
+}
 
 /*# sourceMappingURL=main.css.map */

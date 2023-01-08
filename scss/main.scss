@@ -15,7 +15,7 @@ body {
 
 a {
     text-decoration: none;
-    color: $dark-color;
+    color: set-text-color($white-color);
 }
 
 ul {
@@ -36,7 +36,7 @@ img {
 #logo {
     width: 70px;
     height: 70px;
-    color: #fff;
+    color: set-text-color($dark-color);
     text-transform: uppercase;
 }
 
@@ -56,7 +56,7 @@ img {
 
     a {
         text-decoration: none;
-        color: $white-color;
+        color: set-text-color($dark-color);
         text-transform: uppercase;
         border-bottom: 3px solid transparent;
         padding-bottom: 0.5rem;
@@ -78,7 +78,7 @@ img {
     &-home {
         background: $bg-image no-repeat center center/cover;
         height: 100vh;
-        color: $white-color;
+        color: set-text-color($dark-color);
 
         // Header Content
         .header-content {
@@ -154,6 +154,83 @@ img {
             grid-template-columns: repeat(4, 1fr);
             gap: 1.5rem;
             text-align: center;
+
+            .icon {
+                position: relative;
+            }
+
+            // process step
+            &--step {
+                position: absolute;
+                top: 20%;
+                right: 30%;
+                transform: translateX(50%);
+                font-size: 24px;
+                border-radius: 50%;
+                line-height: 15px;
+                padding: 1rem;
+                transition: all 1s;
+
+                &::before {
+                    content: "";
+                    background-color: $main-color;
+                    position: absolute;
+                    z-index: -1;
+                    border-radius: 50%;
+                    height: 40px;
+                    width: 40px;
+                    text-align: center;
+                    top: 10%;
+                    left: 10%;
+                }
+            }
+
+            // process icon
+            &--icon {
+                border-radius: 50%;
+                background-color: $dark-color;
+                color: set-text-color($dark-color);
+                padding: 2rem;
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                text-align: center;
+                transition: all 1s;
+
+                &:hover {
+                    background-color: $main-color;
+                    width: 90px;
+                    height: 90px;
+                    line-height: 90px;
+                }
+            }
+        }
+    }
+}
+
+#main-footer {
+    background-color: $dark-color;
+    color: set-text-color($dark-color);
+    height: 5rem;
+
+    .footer--content {
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+        align-items: center;
+
+        .footer--social {
+            display: flex;
+            gap: 1.5rem;
+
+            a {
+                color: set-text-color($dark-color);
+                font-size: 1.5rem;
+
+                &:hover {
+                    color: $main-color;
+                }
+            }
         }
     }
 }
