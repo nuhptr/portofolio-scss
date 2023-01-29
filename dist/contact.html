@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="keywords" content="html, css, scss, portfolio" />
+    <meta name="description" content="Build portfolio using scss" />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Contact | UI UX Designer & Web Developer</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="main-nav">
+          <img src="/dist/img/logo.png" alt="logo portfolio" id="logo" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html" class="current">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section A: Contact Form -->
+    <section id="contact-a" class="text-center py-3">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="lead">Here is how you can reach me</p>
+        <form action="#">
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              class="text-input subject-input"
+              placeholder="Subject"
+            />
+            <input
+              type="email"
+              class="text-input email-input"
+              placeholder="Email"
+            />
+            <input
+              type="text"
+              class="text-input phone-input"
+              placeholder="Phone Number"
+            />
+            <textarea
+              class="text-input message-input"
+              placeholder="Enter Message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-dark">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section B: Contact Info -->
+    <section id="contact-b" class="py-3 bg-dark">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <ion-icon name="mail-outline"></ion-icon>
+            <h3>Email</h3>
+            <p>Adi@something.com</p>
+          </div>
+          <div>
+            <ion-icon name="call-outline"></ion-icon>
+            <h3>Phone</h3>
+            <p>(555) - 555-55555</p>
+          </div>
+          <div>
+            <ion-icon name="navigate-circle-outline"></ion-icon>
+            <h3>Address</h3>
+            <p>50 Main St, Boston MA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section C: Tagline -->
+    <section id="contact-c" class="bg-main py-4">
+      <h1>Let's Start Your Next Poject</h1>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer--content container">
+        <p>Copyright &copy; 2023. All right reserved</p>
+        <div class="footer--social">
+          <a href="https://facebook.com">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="https://twitter.com"
+            ><ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="https://instagram.com">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="https://linkedin.com">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./dist/js/typewriter.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
